@@ -15,7 +15,6 @@
     margin: 0
     padding: 0
     box-sizing: border-box
-
 body 
     background-color: inherit
     width: 100%
@@ -46,7 +45,7 @@ hr
     &_item 
         margin: 20px
         height: 30px
-        display: flex
+        // display: flex
         a
             font-family: 'EB Garamond', serif
             font-size: 1.5rem
@@ -89,7 +88,7 @@ hr
         background-color: black
         color: white
 
-@media screen and (min-width: 0px) and (max-width: 620px)
+@media only screen and (max-width: 900px)
   .header
         flex-direction: column
         &_1 
@@ -107,10 +106,19 @@ hr
             height: 50%
             width: 100%
 
-@media screen and (min-width: 0px) and (max-width: 520px)
+@media only screen and (min-width: 341px) and (max-width: 900px)
     .nav
+        // display: none
         a
             font-size: 1rem
             padding: 10px
-        &_item 
-            margin: 10px
+            margin: 0px
+
+@media only screen and (max-width: 340px)
+    .nav
+        &_item
+            margin: 2px
+        a
+            font-size: 1rem;
+            margin: 0px
+            padding: 10px
