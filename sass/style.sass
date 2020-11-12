@@ -40,12 +40,11 @@ hr
     width: 100%
     display: flex
     justify-content: center
-    &_item :hover
+    &_item:hover
         border-bottom: 1px solid black
     &_item 
         margin: 20px
         height: 30px
-        // display: flex
         a
             font-family: 'EB Garamond', serif
             font-size: 1.5rem
@@ -53,12 +52,13 @@ hr
             padding: 0px 50px
             text-align: center
             color: black
-    
-.active
+            
+.active 
     background-color: #f7f728c7
+
 .header
     background: white
-    height: 90vh
+    height: 85vh
     width: 100%
     display: flex
     flex-direction: row
@@ -74,7 +74,7 @@ hr
         @include flex_center
         float: left
         height: 100%
-        width: 50% 
+        width: 50%        
     a
         margin-top: 50px
         width: 250px
@@ -88,6 +88,20 @@ hr
         background-color: black
         color: white
 
+
+
+footer
+    @include flex_center
+    height: 5vh
+    background-color: #000000
+    color: #fff
+    text-align: center
+    p
+        font-size: 1rem
+        a
+            text-decoration: none
+            color: #ff0
+// Media query
 @media only screen and (max-width: 900px)
   .header
         flex-direction: column
